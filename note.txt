@@ -1,0 +1,132 @@
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git
+$ git clone https://github.com/mefitria30/wishlist-remote.git
+Cloning into 'wishlist-remote'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote
+$ ls
+wishlist-remote/
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote
+$ cd wishlist-remote
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ code .
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git remote
+origin
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git remote -v
+origin  https://github.com/mefitria30/wishlist-remote.git (fetch)
+origin  https://github.com/mefitria30/wishlist-remote.git (push)
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ alias graph="git log --all --decorate --oneline --graph"
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ graph
+* 0ef2cb1 (HEAD -> main, origin/main, origin/HEAD) Initial commit
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git add .
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git commit -m "menambahkan file html"
+[main c56be08] menambahkan file html
+ 1 file changed, 11 insertions(+)
+ create mode 100644 index.html
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ graph
+* c56be08 (HEAD -> main) menambahkan file html
+* 0ef2cb1 (origin/main, origin/HEAD) Initial commit
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 459 bytes | 459.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mefitria30/wishlist-remote.git
+   0ef2cb1..c56be08  main -> main
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ graph
+* c56be08 (HEAD -> main, origin/main, origin/HEAD) menambahkan file html
+* 0ef2cb1 Initial commit
+
+
+M3FITRIA30@mefitria30-laptop MINGW64 /d/Download/Self Learning/git-learn-remote/wishlist-remote (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+core.editor="C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=Fitria Melliyanni
+user.email=fitria.melliyanni@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/mefitria30/wishlist-remote.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+
+// untuk keluar :q
+
+
